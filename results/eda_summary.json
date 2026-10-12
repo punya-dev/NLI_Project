@@ -175,5 +175,61 @@
       "oov_token_rate_pct": 0.195,
       "oov_type_rate_pct": 4.138
     }
+  },
+  "token_lengths": {
+    "mean": 26.19186,
+    "p95": 41.0,
+    "p99": 51.0,
+    "max": 110,
+    "frac_over_64": 0.00168,
+    "frac_over_128": 0.0
+  },
+  "artifact_baselines": {
+    "hypothesis_only": {
+      "accuracy": 0.6653094462540716,
+      "macro_f1": 0.6650294971213343,
+      "top_cues": {
+        "entailment": [
+          "is near",
+          "making music",
+          "not alone",
+          "not standing",
+          "humans",
+          "human",
+          "are near",
+          "something",
+          "this picture",
+          "knows how"
+        ],
+        "neutral": [
+          "joyously",
+          "sad man",
+          "sad",
+          "tall human",
+          "for",
+          "favorite",
+          "tall",
+          "championship",
+          "happily",
+          "because"
+        ],
+        "contradiction": [
+          "nobody",
+          "no",
+          "nothing",
+          "cat",
+          "cats",
+          "aliens",
+          "never",
+          "at home",
+          "naked",
+          "mars"
+        ]
+      }
+    },
+    "premise_only": {
+      "accuracy": 0.34283387622149836,
+      "macro_f1": 0.17020416413988274
+    }
   }
 }

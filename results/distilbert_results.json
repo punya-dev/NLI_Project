@@ -1,63 +1,63 @@
 {
   "model": "distilbert-base-uncased",
-  "train_file": "/kaggle/working/results/cleaned/train_50k_seed42.csv",
+  "train_file": "/Users/punyapratap/Desktop/nlp_kaggle_code/results/cleaned/train_50k_seed42.csv",
   "n_train": 50000,
   "seed": 42,
   "hyperparameters": {
     "lr": 5e-05,
     "epochs": 1,
     "max_len": 128,
-    "per_device_batch": 16,
-    "grad_accum": 4,
+    "per_device_batch": 8,
+    "grad_accum": 8,
     "effective_batch": 64,
     "weight_decay": 0.01,
     "warmup_frac": 0.1,
     "scheduler": "linear",
-    "precision": "bf16"
+    "precision": "fp32"
   },
-  "train_time_s": 262.2424485683441,
-  "test_inference_s": 18.418883800506592,
+  "train_time_s": 448.6390280723572,
+  "test_inference_s": 24.59978413581848,
   "validation": {
-    "accuracy": 0.8191424507213981,
-    "f1_macro": 0.8188652721142041,
-    "f1_weighted": 0.8192481009104436,
+    "accuracy": 0.8207681365576103,
+    "f1_macro": 0.8204198363681288,
+    "f1_weighted": 0.8207909094840047,
     "per_class": {
       "entailment": {
-        "precision": 0.8501322362621216,
-        "recall": 0.8690297386602583,
-        "f1": 0.8594771241830066
+        "precision": 0.8509572901325478,
+        "recall": 0.8678281766296185,
+        "f1": 0.8593099345627603
       },
       "neutral": {
-        "precision": 0.7637982195845697,
-        "recall": 0.7956723338485316,
-        "f1": 0.7794095382286147
+        "precision": 0.7724117114397827,
+        "recall": 0.7910355486862441,
+        "f1": 0.7816127061698228
       },
       "contradiction": {
-        "precision": 0.8455522971652004,
-        "recall": 0.7916412446613789,
-        "f1": 0.817709153930991
+        "precision": 0.8391831525207403,
+        "recall": 0.8023184868822453,
+        "f1": 0.8203368683718029
       }
     }
   },
   "test": {
-    "accuracy": 0.819014657980456,
-    "f1_macro": 0.8188277179457716,
-    "f1_weighted": 0.8193119845482659,
+    "accuracy": 0.8170806188925082,
+    "f1_macro": 0.8167272305545586,
+    "f1_weighted": 0.8172536078213671,
     "per_class": {
       "entailment": {
-        "precision": 0.84381398069611,
-        "recall": 0.8565914489311164,
-        "f1": 0.8501547075290997
+        "precision": 0.8433945756780402,
+        "recall": 0.8586698337292161,
+        "f1": 0.8509636604384287
       },
       "neutral": {
-        "precision": 0.7624521072796935,
-        "recall": 0.8036657347002174,
-        "f1": 0.7825166364186328
+        "precision": 0.7640550239234449,
+        "recall": 0.7937247592420006,
+        "f1": 0.7786073442023465
       },
       "contradiction": {
-        "precision": 0.8545816733067729,
-        "recall": 0.7951807228915663,
-        "f1": 0.8238118098895824
+        "precision": 0.8456243854473943,
+        "recall": 0.7970342910101946,
+        "f1": 0.8206106870229007
       }
     }
   }
