@@ -1,0 +1,58 @@
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── Virtual environment ────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ────────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── macOS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDEs ───────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Large binary model weights (too big for GitHub) ───────────────────────────
+# Classical sklearn / LightGBM pickle files
+models/classical/*.pkl
+
+# DistilBERT weights — large safetensors binary (~250 MB)
+models/distilbert/model.safetensors
+models/distilbert/training_args.bin
+
+# HuggingFace Trainer checkpoints
+checkpoints/
+
+# ── Raw / cleaned SNLI data (large CSVs — reproduce via 01_eda_local.py) ──────
+results/cleaned/
+
+# ── Keep: tokenizer and model config text files (tiny, needed for inference) ──
+!models/distilbert/config.json
+!models/distilbert/tokenizer.json
+!models/distilbert/tokenizer_config.json
+
+# ── Keep: evaluation results, prediction CSVs, and EDA plots ──────────────────
+# (results/*.json, results/*.csv, results/*.png are all tracked)
+
+# ── HuggingFace cache and misc artefacts ──────────────────────────────────────
+__huggingface_repos__.json
+.cache/
+*.log
+
+# ── OS / temp files ────────────────────────────────────────────────────────────
+*.tmp
+*.bak
+Thumbs.db
