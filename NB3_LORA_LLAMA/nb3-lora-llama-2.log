@@ -1,0 +1,108 @@
+7.4s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s 3 0.00s - to python to disable frozen modules.
+7.4s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.0s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 7 0.00s - to python to disable frozen modules.
+8.0s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+42.8s 9 GPU: Tesla T4 | torch 2.11.0+cu128 | peft 0.20.0
+44.6s 10 {'train': 100000, 'snli_val': 9842, 'snli_test': 9824, 'mnli_m': 9815, 'mnli_mm': 9832}
+47.7s 11 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+47.7s 12 
+47.7s 13 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+47.9s 14 label first-tokens: [87092, 21277, 50859] [' entail', ' neutral', ' contradiction']
+48.2s 15 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+48.2s 16 
+48.2s 17 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+68.1s 18 /tmp/ipykernel_23/3320305593.py:24: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+68.1s 19 scaler = torch.cuda.amp.GradScaler()
+68.1s 20 
+68.1s 21 /tmp/ipykernel_23/3320305593.py:24: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+68.1s 22 scaler = torch.cuda.amp.GradScaler()
+70.0s 23 /tmp/ipykernel_23/3320305593.py:52: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+70.0s 24 scaler.step(opt); scaler.update(); opt.zero_grad(set_to_none=True); sched.step(); step += 1
+70.0s 25 
+70.0s 26 /tmp/ipykernel_23/3320305593.py:52: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+70.0s 27 scaler.step(opt); scaler.update(); opt.zero_grad(set_to_none=True); sched.step(); step += 1
+162.7s 28 [pilot_lr0.0001] step 100/157  loss=0.7936  33.8 samples/s  elapsed 1.6 min  ETA 0.9 min
+218.0s 29 [pilot_lr0.0001] step 157/157  loss=0.3937  33.5 samples/s  elapsed 2.5 min  ETA 0.0 min
+243.0s 30 {'lr': 0.0001, 'val_acc_2k': 0.871, 'train_time_s': 150, 'samples_per_s': 33.4}
+345.7s 31 [pilot_lr0.0002] step 100/157  loss=0.7109  32.3 samples/s  elapsed 1.7 min  ETA 0.9 min
+401.3s 32 [pilot_lr0.0002] step 157/157  loss=0.3574  32.5 samples/s  elapsed 2.6 min  ETA 0.0 min
+426.2s 33 {'lr': 0.0002, 'val_acc_2k': 0.889, 'train_time_s': 155, 'samples_per_s': 32.4}
+426.2s 34 
+426.2s 35 Selected lr: 0.0002 | throughput ~32.9 samples/s | projected full run: 0.85 h on 100,000 examples
+426.4s 36 final train class counts: {0: 33387, 1: 33268, 2: 33345}
+439.0s 37 /tmp/ipykernel_23/3320305593.py:24: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+439.0s 38 scaler = torch.cuda.amp.GradScaler()
+439.0s 39 
+439.0s 40 /tmp/ipykernel_23/3320305593.py:24: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+439.0s 41 scaler = torch.cuda.amp.GradScaler()
+539.7s 42 [final] step 100/3125  loss=1.0358  31.8 samples/s  elapsed 1.7 min  ETA 50.7 min
+638.5s 43 [final] step 200/3125  loss=0.5030  32.1 samples/s  elapsed 3.3 min  ETA 48.6 min
+736.8s 44 [final] step 300/3125  loss=0.4186  32.2 samples/s  elapsed 5.0 min  ETA 46.7 min
+835.3s 45 [final] step 400/3125  loss=0.4358  32.3 samples/s  elapsed 6.6 min  ETA 45.0 min
+934.2s 46 [final] step 500/3125  loss=0.4096  32.3 samples/s  elapsed 8.3 min  ETA 43.3 min
+1033.7s 47 [final] step 600/3125  loss=0.3878  32.3 samples/s  elapsed 9.9 min  ETA 41.7 min
+1131.7s 48 [final] step 700/3125  loss=0.3700  32.3 samples/s  elapsed 11.5 min  ETA 40.0 min
+1230.9s 49 [final] step 800/3125  loss=0.3886  32.3 samples/s  elapsed 13.2 min  ETA 38.4 min
+1329.8s 50 [final] step 900/3125  loss=0.3712  32.3 samples/s  elapsed 14.8 min  ETA 36.7 min
+1430.0s 51 [final] step 1000/3125  loss=0.3818  32.3 samples/s  elapsed 16.5 min  ETA 35.1 min
+1529.2s 52 [final] step 1100/3125  loss=0.3530  32.3 samples/s  elapsed 18.2 min  ETA 33.4 min
+1628.4s 53 [final] step 1200/3125  loss=0.3461  32.3 samples/s  elapsed 19.8 min  ETA 31.8 min
+1727.7s 54 [final] step 1300/3125  loss=0.3376  32.3 samples/s  elapsed 21.5 min  ETA 30.2 min
+1826.9s 55 [final] step 1400/3125  loss=0.3456  32.3 samples/s  elapsed 23.1 min  ETA 28.5 min
+1926.6s 56 [final] step 1500/3125  loss=0.3283  32.3 samples/s  elapsed 24.8 min  ETA 26.9 min
+2026.0s 57 [final] step 1600/3125  loss=0.3524  32.3 samples/s  elapsed 26.4 min  ETA 25.2 min
+2126.2s 58 [final] step 1700/3125  loss=0.3314  32.2 samples/s  elapsed 28.1 min  ETA 23.6 min
+2225.4s 59 [final] step 1800/3125  loss=0.3083  32.2 samples/s  elapsed 29.8 min  ETA 21.9 min
+2325.1s 60 [final] step 1900/3125  loss=0.3025  32.2 samples/s  elapsed 31.4 min  ETA 20.3 min
+2424.3s 61 [final] step 2000/3125  loss=0.2908  32.2 samples/s  elapsed 33.1 min  ETA 18.6 min
+2524.7s 62 [final] step 2100/3125  loss=0.3130  32.2 samples/s  elapsed 34.8 min  ETA 17.0 min
+2623.4s 63 [final] step 2200/3125  loss=0.2826  32.2 samples/s  elapsed 36.4 min  ETA 15.3 min
+2722.5s 64 [final] step 2300/3125  loss=0.2862  32.2 samples/s  elapsed 38.1 min  ETA 13.7 min
+2821.7s 65 [final] step 2400/3125  loss=0.2711  32.2 samples/s  elapsed 39.7 min  ETA 12.0 min
+2921.1s 66 [final] step 2500/3125  loss=0.2972  32.2 samples/s  elapsed 41.4 min  ETA 10.3 min
+3020.9s 67 [final] step 2600/3125  loss=0.2873  32.2 samples/s  elapsed 43.0 min  ETA 8.7 min
+3119.8s 68 [final] step 2700/3125  loss=0.2883  32.2 samples/s  elapsed 44.7 min  ETA 7.0 min
+3218.2s 69 [final] step 2800/3125  loss=0.2795  32.2 samples/s  elapsed 46.3 min  ETA 5.4 min
+3317.1s 70 [final] step 2900/3125  loss=0.2708  32.2 samples/s  elapsed 48.0 min  ETA 3.7 min
+3416.2s 71 [final] step 3000/3125  loss=0.2817  32.2 samples/s  elapsed 49.6 min  ETA 2.1 min
+3515.4s 72 [final] step 3100/3125  loss=0.2553  32.2 samples/s  elapsed 51.3 min  ETA 0.4 min
+3540.5s 73 [final] step 3125/3125  loss=0.2861  32.2 samples/s  elapsed 51.7 min  ETA 0.0 min
+3540.6s 74 /usr/local/lib/python3.13/dist-packages/peft/utils/other.py:1496: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-6ade3d8f-62c6973606367c2b1f01e1a9;d251ab34-8b4e-4c55-8195-744b38cfbecd)
+3540.6s 75 
+3540.6s 76 Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/resolve/main/config.json.
+3540.6s 77 Access to model meta-llama/Llama-3.2-1B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in. - silently ignoring the lookup for the file config.json in meta-llama/Llama-3.2-1B-Instruct.
+3540.6s 78 warnings.warn(
+3540.6s 79 /usr/local/lib/python3.13/dist-packages/peft/utils/save_and_load.py:438: UserWarning: Could not find a config file in meta-llama/Llama-3.2-1B-Instruct - will assume that the vocabulary was not modified.
+3540.6s 80 warnings.warn(
+3540.6s 81 
+3540.6s 82 /usr/local/lib/python3.13/dist-packages/peft/utils/other.py:1496: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-6ade3d8f-62c6973606367c2b1f01e1a9;d251ab34-8b4e-4c55-8195-744b38cfbecd)
+3540.6s 83 
+3540.6s 84 Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/resolve/main/config.json.
+3540.6s 85 Access to model meta-llama/Llama-3.2-1B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in. - silently ignoring the lookup for the file config.json in meta-llama/Llama-3.2-1B-Instruct.
+3540.6s 86 warnings.warn(
+3540.6s 87 /usr/local/lib/python3.13/dist-packages/peft/utils/save_and_load.py:438: UserWarning: Could not find a config file in meta-llama/Llama-3.2-1B-Instruct - will assume that the vocabulary was not modified.
+3540.6s 88 warnings.warn(
+3665.7s 89 [llama1b_lora | snli_val] acc=0.9198 macroF1=0.9197 per-class F1=[0.929, 0.891, 0.939]
+3789.7s 90 [llama1b_lora | snli_test] acc=0.9124 macroF1=0.9121 per-class F1=[0.921, 0.878, 0.937]
+3931.4s 91 [llama1b_lora | mnli_m] acc=0.8269 macroF1=0.8246 per-class F1=[0.863, 0.762, 0.849]
+4075.9s 92 [llama1b_lora | mnli_mm] acc=0.8282 macroF1=0.8252 per-class F1=[0.863, 0.757, 0.855]
+4075.9s 93 eval_set  accuracy  f1_macro
+4075.9s 94 snli_val    0.9198    0.9197
+4075.9s 95 snli_test    0.9124    0.9121
+4075.9s 96 mnli_m    0.8269    0.8246
+4075.9s 97 mnli_mm    0.8282    0.8252
+4075.9s 98 
+4075.9s 99 train time: 51.7 min | 32.2 samples/s | peak GPU mem 8.0 GB | trainable params 11.3M of 1247M
+4075.9s 100 Files: ['llama1b_lora_adapter', 'llama_lora_pilot.csv', 'preds_llama1b_lora_mnli_m.csv', 'preds_llama1b_lora_mnli_mm.csv', 'preds_llama1b_lora_snli_test.csv', 'preds_llama1b_lora_snli_val.csv', 'results_llama1b_lora_mnli_m.json', 'results_llama1b_lora_mnli_mm.json', 'results_llama1b_lora_snli_test.json', 'results_llama1b_lora_snli_val.json']
+4082.1s 101 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+4082.1s 102 cells[i][c] = re.sub('\\\\\|', '|', cell)
+4082.2s 103 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4082.2s 104 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+4083.1s 105 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+4083.2s 106 [NbConvertApp] Writing 148178 bytes to __notebook__.ipynb
+4086.3s 107 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+4087.0s 108 [NbConvertApp] Writing 456994 bytes to __results__.html

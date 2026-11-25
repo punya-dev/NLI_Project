@@ -1,0 +1,44 @@
+7.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.3s 3 0.00s - to python to disable frozen modules.
+7.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.9s 7 0.00s - to python to disable frozen modules.
+7.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+41.1s 9 GPU: Tesla T4 | adapter: /kaggle/input/datasets/punyapratap07/nli-llama-adapter/results/llama1b_lora/llama1b_lora_adapter
+44.3s 10 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+44.3s 11 
+44.3s 12 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+138.9s 13 6,400/9,842  86 ex/s  ETA 0.7 min
+196.0s 14 SNLI val accuracy of loaded teacher: 0.9198  (Notebook 3 reported 0.9198)
+197.8s 15 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+197.8s 16 
+197.8s 17 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+201.3s 18 pool outside the 100K: 449,367 | extra drawn: 47,874 | share of extra premises also in the 100K train: 47.12%
+290.5s 19 6,400/47,874  75 ex/s  ETA 9.2 min
+377.1s 20 12,800/47,874  75 ex/s  ETA 7.8 min
+466.5s 21 19,200/47,874  74 ex/s  ETA 6.5 min
+557.9s 22 25,600/47,874  73 ex/s  ETA 5.1 min
+654.2s 23 32,000/47,874  71 ex/s  ETA 3.7 min
+754.5s 24 38,400/47,874  70 ex/s  ETA 2.3 min
+860.9s 25 44,800/47,874  68 ex/s  ETA 0.7 min
+916.0s 26 {
+916.0s 27 "n": 47874,
+916.0s 28 "teacher_acc_on_unseen_snli": 0.8985461837322973,
+916.0s 29 "mean_max_prob": 0.9085890054702759,
+916.0s 30 "frac_max_prob_gt_0.99": 0.21930484187659272,
+916.0s 31 "val_acc_check": 0.9198333672017882,
+916.0s 32 "label_time_s": 714.5999047756195,
+916.0s 33 "premise_overlap_with_train100k": 0.4711534444583699
+916.0s 34 }
+916.1s 35 saved: ['extra_stats.json', 'snli_extra_47k.csv']
+916.1s 36 Next: make a Dataset 'nli-snli-extra' from this output; Notebook 6 with RUN_ARMS=['kd_extra'].
+922.0s 37 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+922.0s 38 cells[i][c] = re.sub('\\\\\|', '|', cell)
+922.2s 39 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+922.2s 40 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+923.0s 41 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+923.1s 42 [NbConvertApp] Writing 237960 bytes to __notebook__.ipynb
+925.6s 43 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+926.1s 44 [NbConvertApp] Writing 503750 bytes to __results__.html

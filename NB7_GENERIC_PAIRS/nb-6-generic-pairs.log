@@ -1,0 +1,166 @@
+6.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.3s 3 0.00s - to python to disable frozen modules.
+6.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.9s 7 0.00s - to python to disable frozen modules.
+6.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+35.8s 9 GPU: Tesla T4
+39.8s 10 {'train': 100000, 'val_hard': 3493, 'test_hard': 3503}
+39.9s 11 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+39.9s 12 
+39.9s 13 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+40.7s 14 
+40.7s 15 ===== arm: kd_generic =====
+51.6s 16 generic pairs: 53,993 -> 47,874 after removing meta-text hypotheses
+61.3s 17 kd_generic: 100,000 SNLI + 47,874 generic pairs
+61.3s 18 using: {'T': 2.0, 'alpha': 0.2}
+70.6s 19 [transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+70.6s 20 Key                     | Status     |
+70.6s 21 ------------------------+------------+-
+70.6s 22 vocab_layer_norm.bias   | UNEXPECTED |
+70.6s 23 vocab_layer_norm.weight | UNEXPECTED |
+70.6s 24 vocab_transform.bias    | UNEXPECTED |
+70.6s 25 vocab_transform.weight  | UNEXPECTED |
+70.6s 26 vocab_projector.bias    | UNEXPECTED |
+70.6s 27 classifier.bias         | MISSING    |
+70.6s 28 classifier.weight       | MISSING    |
+70.6s 29 pre_classifier.weight   | MISSING    |
+70.6s 30 pre_classifier.bias     | MISSING    |
+70.6s 31 
+70.6s 32 Notes:
+70.6s 33 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+70.6s 34 - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+70.6s 35 
+70.6s 36 [transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+70.6s 37 Key                     | Status     |
+70.6s 38 ------------------------+------------+-
+70.6s 39 vocab_layer_norm.bias   | UNEXPECTED |
+70.6s 40 vocab_layer_norm.weight | UNEXPECTED |
+70.6s 41 vocab_transform.bias    | UNEXPECTED |
+70.6s 42 vocab_transform.weight  | UNEXPECTED |
+70.6s 43 vocab_projector.bias    | UNEXPECTED |
+70.6s 44 classifier.bias         | MISSING    |
+70.6s 45 classifier.weight       | MISSING    |
+70.6s 46 pre_classifier.weight   | MISSING    |
+70.6s 47 pre_classifier.bias     | MISSING    |
+70.6s 48 
+70.6s 49 Notes:
+70.6s 50 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+70.6s 51 - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+70.9s 52 /tmp/ipykernel_23/571248753.py:75: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+70.9s 53 scaler = torch.cuda.amp.GradScaler(); torch.cuda.reset_peak_memory_stats(); hist, train_time = [], 0.0
+70.9s 54 
+70.9s 55 /tmp/ipykernel_23/571248753.py:75: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+70.9s 56 scaler = torch.cuda.amp.GradScaler(); torch.cuda.reset_peak_memory_stats(); hist, train_time = [], 0.0
+461.3s 57 [kd_generic {'T': 2.0, 'alpha': 0.2} s42] epoch 1/3 loss=0.6051 val=0.8461 val-hard=0.7080 (387s)
+851.1s 58 [kd_generic {'T': 2.0, 'alpha': 0.2} s42] epoch 2/3 loss=0.2668 val=0.8628 val-hard=0.7266 (387s)
+1241.6s 59 [kd_generic {'T': 2.0, 'alpha': 0.2} s42] epoch 3/3 loss=0.1579 val=0.8687 val-hard=0.7432 (387s)
+1244.5s 60 [distilbert_kd_generic_s42 | snli_val] acc=0.8687 macroF1=0.8686 per-class F1=[0.892, 0.831, 0.882]
+1247.5s 61 [distilbert_kd_generic_s42 | snli_test] acc=0.8721 macroF1=0.8718 per-class F1=[0.89, 0.833, 0.893]
+1252.2s 62 [distilbert_kd_generic_s42 | mnli_m] acc=0.7076 macroF1=0.7064 per-class F1=[0.753, 0.651, 0.716]
+1256.5s 63 [distilbert_kd_generic_s42 | mnli_mm] acc=0.7197 macroF1=0.7173 per-class F1=[0.766, 0.653, 0.733]
+1256.5s 64 [transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+1256.5s 65 Key                     | Status     |
+1256.5s 66 ------------------------+------------+-
+1256.5s 67 vocab_layer_norm.bias   | UNEXPECTED |
+1256.5s 68 vocab_layer_norm.weight | UNEXPECTED |
+1256.5s 69 vocab_transform.bias    | UNEXPECTED |
+1256.5s 70 vocab_transform.weight  | UNEXPECTED |
+1256.5s 71 vocab_projector.bias    | UNEXPECTED |
+1256.5s 72 classifier.bias         | MISSING    |
+1256.5s 73 classifier.weight       | MISSING    |
+1256.5s 74 pre_classifier.weight   | MISSING    |
+1256.5s 75 pre_classifier.bias     | MISSING    |
+1256.5s 76 
+1256.5s 77 Notes:
+1256.5s 78 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+1256.5s 79 - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+1256.5s 80 
+1256.5s 81 [transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+1256.5s 82 Key                     | Status     |
+1256.5s 83 ------------------------+------------+-
+1256.5s 84 vocab_layer_norm.bias   | UNEXPECTED |
+1256.5s 85 vocab_layer_norm.weight | UNEXPECTED |
+1256.5s 86 vocab_transform.bias    | UNEXPECTED |
+1256.5s 87 vocab_transform.weight  | UNEXPECTED |
+1256.5s 88 vocab_projector.bias    | UNEXPECTED |
+1256.5s 89 classifier.bias         | MISSING    |
+1256.5s 90 classifier.weight       | MISSING    |
+1256.5s 91 pre_classifier.weight   | MISSING    |
+1256.5s 92 pre_classifier.bias     | MISSING    |
+1256.5s 93 
+1256.5s 94 Notes:
+1256.5s 95 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+1256.5s 96 - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+1256.6s 97 /tmp/ipykernel_23/571248753.py:75: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+1256.6s 98 scaler = torch.cuda.amp.GradScaler(); torch.cuda.reset_peak_memory_stats(); hist, train_time = [], 0.0
+1256.6s 99 
+1256.6s 100 /tmp/ipykernel_23/571248753.py:75: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+1256.6s 101 scaler = torch.cuda.amp.GradScaler(); torch.cuda.reset_peak_memory_stats(); hist, train_time = [], 0.0
+1646.5s 102 [kd_generic {'T': 2.0, 'alpha': 0.2} s43] epoch 1/3 loss=0.6034 val=0.8522 val-hard=0.7151 (387s)
+2036.8s 103 [kd_generic {'T': 2.0, 'alpha': 0.2} s43] epoch 2/3 loss=0.2613 val=0.8706 val-hard=0.7469 (387s)
+2427.0s 104 [kd_generic {'T': 2.0, 'alpha': 0.2} s43] epoch 3/3 loss=0.1553 val=0.8734 val-hard=0.7532 (386s)
+2429.9s 105 [distilbert_kd_generic_s43 | snli_val] acc=0.8734 macroF1=0.8731 per-class F1=[0.892, 0.837, 0.89]
+2432.9s 106 [distilbert_kd_generic_s43 | snli_test] acc=0.8766 macroF1=0.8764 per-class F1=[0.895, 0.838, 0.896]
+2437.6s 107 [distilbert_kd_generic_s43 | mnli_m] acc=0.7128 macroF1=0.7110 per-class F1=[0.761, 0.652, 0.72]
+2441.9s 108 [distilbert_kd_generic_s43 | mnli_mm] acc=0.7250 macroF1=0.7225 per-class F1=[0.768, 0.655, 0.744]
+2441.9s 109 [transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+2441.9s 110 Key                     | Status     |
+2441.9s 111 ------------------------+------------+-
+2441.9s 112 vocab_layer_norm.bias   | UNEXPECTED |
+2441.9s 113 vocab_layer_norm.weight | UNEXPECTED |
+2441.9s 114 vocab_transform.bias    | UNEXPECTED |
+2441.9s 115 vocab_transform.weight  | UNEXPECTED |
+2441.9s 116 vocab_projector.bias    | UNEXPECTED |
+2441.9s 117 classifier.bias         | MISSING    |
+2441.9s 118 classifier.weight       | MISSING    |
+2441.9s 119 pre_classifier.weight   | MISSING    |
+2441.9s 120 pre_classifier.bias     | MISSING    |
+2441.9s 121 
+2441.9s 122 Notes:
+2441.9s 123 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+2441.9s 124 - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2441.9s 125 
+2441.9s 126 [transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+2441.9s 127 Key                     | Status     |
+2441.9s 128 ------------------------+------------+-
+2441.9s 129 vocab_layer_norm.bias   | UNEXPECTED |
+2441.9s 130 vocab_layer_norm.weight | UNEXPECTED |
+2441.9s 131 vocab_transform.bias    | UNEXPECTED |
+2441.9s 132 vocab_transform.weight  | UNEXPECTED |
+2441.9s 133 vocab_projector.bias    | UNEXPECTED |
+2441.9s 134 classifier.bias         | MISSING    |
+2441.9s 135 classifier.weight       | MISSING    |
+2441.9s 136 pre_classifier.weight   | MISSING    |
+2441.9s 137 pre_classifier.bias     | MISSING    |
+2441.9s 138 
+2441.9s 139 Notes:
+2441.9s 140 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+2441.9s 141 - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2442.1s 142 /tmp/ipykernel_23/571248753.py:75: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+2442.1s 143 scaler = torch.cuda.amp.GradScaler(); torch.cuda.reset_peak_memory_stats(); hist, train_time = [], 0.0
+2442.1s 144 
+2442.1s 145 /tmp/ipykernel_23/571248753.py:75: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+2442.1s 146 scaler = torch.cuda.amp.GradScaler(); torch.cuda.reset_peak_memory_stats(); hist, train_time = [], 0.0
+2832.3s 147 [kd_generic {'T': 2.0, 'alpha': 0.2} s44] epoch 1/3 loss=0.6074 val=0.8476 val-hard=0.7088 (387s)
+3223.1s 148 [kd_generic {'T': 2.0, 'alpha': 0.2} s44] epoch 2/3 loss=0.2707 val=0.8666 val-hard=0.7355 (387s)
+3613.6s 149 [kd_generic {'T': 2.0, 'alpha': 0.2} s44] epoch 3/3 loss=0.1614 val=0.8717 val-hard=0.7486 (387s)
+3616.6s 150 [distilbert_kd_generic_s44 | snli_val] acc=0.8717 macroF1=0.8714 per-class F1=[0.893, 0.833, 0.888]
+3620.0s 151 [distilbert_kd_generic_s44 | snli_test] acc=0.8717 macroF1=0.8714 per-class F1=[0.893, 0.83, 0.891]
+3624.2s 152 [distilbert_kd_generic_s44 | mnli_m] acc=0.6984 macroF1=0.6970 per-class F1=[0.746, 0.642, 0.703]
+3628.4s 153 [distilbert_kd_generic_s44 | mnli_mm] acc=0.7179 macroF1=0.7159 per-class F1=[0.76, 0.653, 0.735]
+3628.5s 154 arm                       hp    snli_test       mnli_m      mnli_mm         hard         easy
+3628.5s 155 kd_generic {'T': 2.0, 'alpha': 0.2} 87.35 ± 0.27 70.63 ± 0.73 72.08 ± 0.37 75.75 ± 0.28 93.78 ± 0.27
+3628.5s 156 
+3628.5s 157 Files: ['preds_distilbert_kd_generic_s42_mnli_m.csv', 'preds_distilbert_kd_generic_s42_mnli_mm.csv', 'preds_distilbert_kd_generic_s42_snli_test.csv', 'preds_distilbert_kd_generic_s42_snli_val.csv', 'preds_distilbert_kd_generic_s43_mnli_m.csv', 'preds_distilbert_kd_generic_s43_mnli_mm.csv', 'preds_distilbert_kd_generic_s43_snli_test.csv', 'preds_distilbert_kd_generic_s43_snli_val.csv', 'preds_distilbert_kd_generic_s44_mnli_m.csv', 'preds_distilbert_kd_generic_s44_mnli_mm.csv', 'preds_distilbert_kd_generic_s44_snli_test.csv', 'preds_distilbert_kd_generic_s44_snli_val.csv'] ...
+3628.5s 158 Next: Save Version -> Save & Run All; make a Dataset from the output; the analysis notebook compares against Notebook 2 with McNemar tests.
+3633.8s 159 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3633.8s 160 cells[i][c] = re.sub('\\\\\|', '|', cell)
+3633.9s 161 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3633.9s 162 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3634.6s 163 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3634.7s 164 [NbConvertApp] Writing 134220 bytes to __notebook__.ipynb
+3637.1s 165 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+3637.7s 166 [NbConvertApp] Writing 450288 bytes to __results__.html

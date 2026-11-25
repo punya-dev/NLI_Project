@@ -1,0 +1,52 @@
+12.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.0s 3 0.00s - to python to disable frozen modules.
+12.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.8s 7 0.00s - to python to disable frozen modules.
+12.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+77.9s 9 GPU: Tesla T4 | adapter: /kaggle/input/datasets/punyapratap07/nli-llama-adapter/results/llama1b_lora/llama1b_lora_adapter
+82.1s 10 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+82.1s 11 
+82.1s 12 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+177.6s 13 6,400/9,842  89 ex/s  ETA 0.6 min
+228.2s 14 SNLI val accuracy of loaded teacher: 0.9198  (Notebook 3 reported 0.9198)
+310.0s 15 6,400/100,000  89 ex/s  ETA 17.6 min
+383.7s 16 12,800/100,000  88 ex/s  ETA 16.6 min
+457.5s 17 19,200/100,000  87 ex/s  ETA 15.4 min
+531.7s 18 25,600/100,000  87 ex/s  ETA 14.2 min
+607.4s 19 32,000/100,000  87 ex/s  ETA 13.1 min
+683.9s 20 38,400/100,000  86 ex/s  ETA 11.9 min
+762.0s 21 44,800/100,000  85 ex/s  ETA 10.8 min
+840.9s 22 51,200/100,000  85 ex/s  ETA 9.6 min
+922.5s 23 57,600/100,000  84 ex/s  ETA 8.4 min
+1005.8s 24 64,000/100,000  83 ex/s  ETA 7.2 min
+1090.4s 25 70,400/100,000  83 ex/s  ETA 6.0 min
+1176.7s 26 76,800/100,000  82 ex/s  ETA 4.7 min
+1265.4s 27 83,200/100,000  81 ex/s  ETA 3.5 min
+1356.7s 28 89,600/100,000  80 ex/s  ETA 2.2 min
+1453.4s 29 96,000/100,000  79 ex/s  ETA 0.8 min
+1517.9s 30 {
+1517.9s 31 "n": 100000,
+1517.9s 32 "teacher_acc_on_train": 0.93277,
+1517.9s 33 "mean_max_prob": 0.9175167083740234,
+1517.9s 34 "frac_max_prob_gt_0.99": 0.2255,
+1517.9s 35 "val_acc_check": 0.9198333672017882,
+1517.9s 36 "label_time_s": 1289.4477021694183,
+1517.9s 37 "teacher_label_agreement_by_class": {
+1517.9s 38 "entailment": 0.9424626351573966,
+1517.9s 39 "neutral": 0.8923590236864254,
+1517.9s 40 "contradiction": 0.963382816014395
+1517.9s 41 }
+1517.9s 42 }
+1518.1s 43 saved: ['teacher_logits_train_100k.csv', 'teacher_stats.json']
+1518.1s 44 Next: Save Version -> Save & Run All, then make a Dataset (e.g. 'nli-teacher') from this output.
+1523.6s 45 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+1523.6s 46 cells[i][c] = re.sub('\\\\\|', '|', cell)
+1523.8s 47 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+1523.8s 48 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+1524.7s 49 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1524.8s 50 [NbConvertApp] Writing 108701 bytes to __notebook__.ipynb
+1527.5s 51 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1528.0s 52 [NbConvertApp] Writing 393572 bytes to __results__.html

@@ -1,0 +1,110 @@
+11.5s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.5s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.5s 3 0.00s - to python to disable frozen modules.
+11.5s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.4s 7 0.00s - to python to disable frozen modules.
+12.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+369.0s 9 models found: {'LR': 1, 'LR hyp-only': 1, 'DistilBERT baseline': 3, 'DB + distillation (kd)': 3, 'DB + product of experts': 3, 'DB + label smoothing (control)': 3, 'DB + distillation + generic': 3, 'DB + distillation + extra SNLI (control)': 3, 'Llama-1B LoRA': 1}
+369.0s 10 missing: []
+369.8s 11 model  seeds snli_val_acc snli_test_acc   mnli_m_acc  mnli_mm_acc
+369.8s 12 LR      1        74.68         74.56        49.18        49.09
+369.8s 13 LR hyp-only      1        64.51         64.34        40.82        41.55
+369.8s 14 DistilBERT baseline      3 85.94 ± 0.13  85.82 ± 0.05 62.79 ± 0.30 65.05 ± 0.43
+369.8s 15 DB + distillation (kd)      3 87.15 ± 0.25  87.12 ± 0.12 65.81 ± 0.32 67.47 ± 0.71
+369.8s 16 DB + product of experts      3 84.72 ± 0.32  84.34 ± 0.41 59.92 ± 1.02 61.77 ± 1.11
+369.8s 17 DB + label smoothing (control)      3 86.03 ± 0.27  85.89 ± 0.12 63.14 ± 1.09 65.06 ± 1.30
+369.8s 18 DB + distillation + generic      3 87.13 ± 0.24  87.35 ± 0.27 70.63 ± 0.73 72.08 ± 0.37
+369.8s 19 DB + distillation + extra SNLI (control)      3 87.98 ± 0.10  87.93 ± 0.05 67.12 ± 0.46 69.00 ± 0.25
+369.8s 20 Llama-1B LoRA      1        91.98         91.24        82.69        82.82
+369.9s 21 hard subset: 3503 of 9824 test rows (35.7%)
+369.9s 22 model      overall         hard         easy
+369.9s 23 LR        74.56        50.16        88.09
+369.9s 24 DistilBERT baseline 85.82 ± 0.05 73.52 ± 0.12 92.63 ± 0.02
+369.9s 25 DB + distillation (kd) 87.12 ± 0.12 75.35 ± 0.23 93.64 ± 0.10
+369.9s 26 DB + product of experts 84.34 ± 0.41 77.08 ± 0.28 88.37 ± 0.51
+369.9s 27 DB + label smoothing (control) 85.89 ± 0.12 73.61 ± 0.45 92.70 ± 0.23
+369.9s 28 DB + distillation + generic 87.35 ± 0.27 75.75 ± 0.28 93.78 ± 0.27
+369.9s 29 DB + distillation + extra SNLI (control) 87.93 ± 0.05 76.88 ± 0.35 94.05 ± 0.19
+369.9s 30 Llama-1B LoRA        91.24        82.96        95.82
+372.7s 31 model                                       vs  eval_set  diff_pts             ci95 seeds_sig(p<.05)             mcnemar_p_per_seed
+372.7s 32 DB + distillation (kd)                      DistilBERT baseline snli_test      1.30   [+1.00, +1.61]              3/3  [1.5e-06, 1.68e-09, 4.99e-08]
+372.7s 33 DB + distillation (kd)                      DistilBERT baseline    mnli_m      3.02   [+2.55, +3.50]              3/3  [2.87e-18, 7.61e-17, 2.1e-16]
+372.7s 34 DB + distillation (kd)                      DistilBERT baseline   mnli_mm      2.42   [+1.94, +2.87]              3/3 [1.83e-15, 2.23e-13, 6.92e-08]
+372.7s 35 DB + product of experts                      DistilBERT baseline snli_test     -1.48   [-1.89, -1.10]              3/3 [4.12e-08, 0.000693, 8.59e-11]
+372.7s 36 DB + product of experts                      DistilBERT baseline    mnli_m     -2.87   [-3.53, -2.19]              3/3 [1.57e-14, 5.24e-06, 2.26e-11]
+372.7s 37 DB + product of experts                      DistilBERT baseline   mnli_mm     -3.28   [-3.93, -2.60]              3/3  [1.5e-13, 1.67e-09, 3.23e-19]
+372.7s 38 DB + label smoothing (control)                      DistilBERT baseline snli_test      0.07   [-0.15, +0.32]              0/3          [0.772, 0.224, 0.923]
+372.7s 39 DB + label smoothing (control)                      DistilBERT baseline    mnli_m      0.35   [+0.00, +0.68]              1/3       [0.972, 4.04e-05, 0.517]
+372.7s 40 DB + label smoothing (control)                      DistilBERT baseline   mnli_mm      0.01   [-0.34, +0.33]              2/3        [0.00045, 0.00595, 0.5]
+372.7s 41 DB + distillation + generic                      DistilBERT baseline snli_test      1.53   [+1.20, +1.88]              3/3 [9.54e-08, 5.81e-13, 1.98e-07]
+372.7s 42 DB + distillation + generic                      DistilBERT baseline    mnli_m      7.83   [+7.15, +8.49]              3/3 [2.23e-69, 1.31e-70, 1.91e-58]
+372.7s 43 DB + distillation + generic                      DistilBERT baseline   mnli_mm      7.03   [+6.37, +7.74]              3/3 [3.41e-58, 1.39e-55, 1.49e-54]
+372.7s 44 DB + distillation + extra SNLI (control)                      DistilBERT baseline snli_test      2.11   [+1.73, +2.46]              3/3 [1.81e-14, 7.42e-16, 2.97e-16]
+372.7s 45 DB + distillation + extra SNLI (control)                      DistilBERT baseline    mnli_m      4.33   [+3.80, +4.86]              3/3  [1.42e-31, 4.81e-26, 3.7e-25]
+372.7s 46 DB + distillation + extra SNLI (control)                      DistilBERT baseline   mnli_mm      3.95   [+3.45, +4.48]              3/3 [2.72e-29, 3.73e-20, 1.69e-22]
+372.7s 47 Llama-1B LoRA                      DistilBERT baseline snli_test      5.42   [+4.84, +5.98]              1/1                      [1.8e-62]
+372.7s 48 Llama-1B LoRA                      DistilBERT baseline    mnli_m     19.90 [+18.95, +20.91]              1/1                    [6.37e-308]
+372.7s 49 Llama-1B LoRA                      DistilBERT baseline   mnli_mm     17.77 [+16.89, +18.61]              1/1                    [5.38e-276]
+372.7s 50 DB + distillation + generic                   DB + distillation (kd) snli_test      0.23   [-0.04, +0.52]              0/3         [0.344, 0.0693, 0.893]
+372.7s 51 DB + distillation + generic                   DB + distillation (kd)    mnli_m      4.82   [+4.20, +5.46]              3/3 [5.35e-31, 2.41e-34, 6.68e-26]
+372.7s 52 DB + distillation + generic                   DB + distillation (kd)   mnli_mm      4.61   [+4.05, +5.23]              3/3 [5.68e-26, 9.13e-27, 1.96e-34]
+372.7s 53 DB + distillation + generic DB + distillation + extra SNLI (control) snli_test     -0.58   [-0.89, -0.27]              2/3     [0.00381, 0.297, 0.000469]
+372.7s 54 DB + distillation + generic DB + distillation + extra SNLI (control)    mnli_m      3.51   [+2.90, +4.14]              3/3 [1.13e-15, 2.55e-22, 8.71e-15]
+372.7s 55 DB + distillation + generic DB + distillation + extra SNLI (control)   mnli_mm      3.08   [+2.51, +3.68]              3/3  [4.53e-12, 3.26e-17, 5.7e-14]
+372.7s 56 DB + distillation + extra SNLI (control)                   DB + distillation (kd) snli_test      0.81   [+0.53, +1.09]              3/3  [6.85e-05, 0.00257, 0.000193]
+372.7s 57 DB + distillation + extra SNLI (control)                   DB + distillation (kd)    mnli_m      1.31   [+0.89, +1.74]              3/3 [3.02e-06, 0.000578, 0.000912]
+372.7s 58 DB + distillation + extra SNLI (control)                   DB + distillation (kd)   mnli_mm      1.53   [+1.12, +1.95]              3/3   [1.9e-06, 0.00314, 3.38e-09]
+372.7s 59 model  snli_test_closed_%  mnli_m_closed_%  mnli_mm_closed_%
+372.7s 60 DB + distillation (kd)                24.0             15.2              13.6
+372.7s 61 DB + product of experts               -27.2            -14.4             -18.5
+372.7s 62 DB + label smoothing (control)                 1.4              1.8               0.0
+372.7s 63 DB + distillation + generic                28.3             39.4              39.6
+372.7s 64 DB + distillation + extra SNLI (control)                38.9             21.7              22.2
+372.8s 65 
+372.8s 66 mnli_m:
+372.8s 67 LR  DistilBERT baseline  DB + distillation (kd)  DB + product of experts  DB + label smoothing (control)  DB + distillation + generic  DB + distillation + extra SNLI (control)  Llama-1B LoRA
+372.8s 68 fiction     48.3                 61.7                    65.7                     59.8                            62.0                         69.3                                      66.3           83.1
+372.8s 69 government  51.9                 68.9                    71.7                     65.1                            69.0                         76.3                                      72.9           84.5
+372.8s 70 slate       46.8                 59.1                    61.9                     56.5                            59.7                         67.7                                      63.9           79.9
+372.8s 71 telephone   51.1                 58.1                    61.5                     55.4                            58.7                         67.6                                      63.0           82.0
+372.8s 72 travel      47.9                 66.2                    68.3                     62.8                            66.4                         72.3                                      69.7           83.9
+372.8s 73 
+372.8s 74 mnli_mm:
+372.8s 75 LR  DistilBERT baseline  DB + distillation (kd)  DB + product of experts  DB + label smoothing (control)  DB + distillation + generic  DB + distillation + extra SNLI (control)  Llama-1B LoRA
+372.8s 76 facetoface  52.0                 64.7                    67.1                     62.4                            64.0                         71.4                                      68.6           82.2
+372.8s 77 letters     50.2                 70.9                    73.0                     68.7                            71.6                         76.8                                      73.8           86.3
+372.8s 78 nineeleven  48.9                 62.3                    65.6                     59.5                            62.1                         71.8                                      67.6           84.1
+372.8s 79 oup         47.0                 65.7                    67.8                     60.0                            66.1                         71.9                                      68.8           81.8
+372.8s 80 verbatim    47.3                 61.5                    63.9                     58.2                            61.4                         68.4                                      66.1           79.5
+373.5s 81 eval_set        property           value    n   LR  DistilBERT baseline  DB + distillation (kd)  DB + product of experts  DB + label smoothing (control)  DB + distillation + generic  DB + distillation + extra SNLI (control)  Llama-1B LoRA
+373.5s 82 snli_test    hyp_negation              no 9619 74.6                 85.8                    87.1                     84.4                            85.9                         87.3                                      87.9           91.2
+373.5s 83 snli_test    hyp_negation             yes  205 72.2                 85.4                    87.8                     82.8                            85.0                         88.9                                      87.3           92.7
+373.5s 84 snli_test  overlap_bucket (-0.001, 0.333] 3577 73.4                 85.2                    86.3                     82.8                            85.0                         86.7                                      87.4           90.9
+373.5s 85 snli_test  overlap_bucket  (0.333, 0.568] 2972 71.1                 85.1                    86.1                     83.6                            85.1                         86.5                                      86.9           90.1
+373.5s 86 snli_test  overlap_bucket    (0.568, 1.0] 3275 79.0                 87.2                    88.9                     86.8                            87.5                         88.9                                      89.4           92.6
+373.5s 87 snli_test  hyp_len_bucket    (0.999, 6.0] 4314 77.2                 87.3                    88.1                     86.1                            87.3                         88.6                                      89.1           91.9
+373.5s 88 snli_test  hyp_len_bucket      (6.0, 8.0] 2686 72.9                 85.1                    86.9                     83.5                            85.0                         86.9                                      87.6           90.7
+373.5s 89 snli_test  hyp_len_bucket     (8.0, 29.0] 2824 72.1                 84.2                    85.9                     82.4                            84.5                         85.8                                      86.4           90.8
+373.5s 90 snli_test prem_len_bucket   (1.999, 10.0] 3422 74.4                 86.3                    87.1                     84.9                            86.0                         87.3                                      88.0           91.3
+373.5s 91 snli_test prem_len_bucket    (10.0, 16.0] 3427 75.5                 86.0                    87.7                     84.5                            86.1                         87.8                                      88.2           91.4
+373.5s 92 snli_test prem_len_bucket    (16.0, 54.0] 2975 73.7                 85.1                    86.6                     83.5                            85.5                         86.8                                      87.6           91.0
+443.6s 93 model  params_M  train_min  peak_gpu_GB  infer_ex_per_s
+443.6s 94 LR       2.0        1.7          NaN         14170.9
+443.6s 95 DistilBERT baseline      67.0        9.2          1.9          3004.4
+443.6s 96 DB + distillation (kd)      67.0        9.4          1.9          3309.4
+443.6s 97 DB + product of experts      67.0        9.5          1.9          3231.0
+443.6s 98 DB + label smoothing (control)      67.0        9.5          1.9          3252.1
+443.6s 99 DB + distillation + generic      67.0       19.4          2.1          3249.3
+443.6s 100 DB + distillation + extra SNLI (control)      67.0       14.0          1.9          3254.1
+443.6s 101 Llama-1B LoRA    1247.1       51.7          8.0            79.2
+445.2s 102 120 sample rows saved. Files: ['accuracy_by_property.csv', 'compute.csv', 'errors_sample.csv', 'fig1_accuracy.png', 'fig2_genre.png', 'fig3_hard_easy.png', 'fig4_confusion_mnli_m.png', 'gap_closure.csv', 'genre_mnli_m.csv', 'genre_mnli_mm.csv', 'hard_easy.csv', 'main_results.csv', 'significance_vs_baseline.csv']
+449.0s 103 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+449.0s 104 cells[i][c] = re.sub('\\\\\|', '|', cell)
+449.2s 105 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+449.2s 106 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+450.2s 107 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+450.3s 108 [NbConvertApp] Writing 41833 bytes to __notebook__.ipynb
+453.8s 109 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+454.6s 110 [NbConvertApp] Writing 386351 bytes to __results__.html

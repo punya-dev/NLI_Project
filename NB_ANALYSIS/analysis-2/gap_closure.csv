@@ -1,0 +1,6 @@
+model,snli_test_closed_%,mnli_m_closed_%,mnli_mm_closed_%
+DB + distillation (kd),24.0,15.2,13.6
+DB + product of experts,-27.2,-14.4,-18.5
+DB + label smoothing (control),1.4,1.8,0.0
+DB + distillation + generic,28.3,39.4,39.6
+DB + distillation + extra SNLI (control),38.9,21.7,22.2

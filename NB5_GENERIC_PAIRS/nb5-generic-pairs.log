@@ -1,0 +1,114 @@
+7.6s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.6s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.6s 3 0.00s - to python to disable frozen modules.
+7.6s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.2s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s 7 0.00s - to python to disable frozen modules.
+8.2s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+45.3s 9 GPU: Tesla T4 | pairs target: 60000
+45.6s 10 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+45.6s 11 
+45.6s 12 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+88.8s 13 wikipedia  candidate premises: 120,003
+88.8s 14 news       candidate premises: 87,144
+88.8s 15 reviews    candidate premises: 120,001
+93.5s 16 reference texts: 213,939 exact, 741,398 8-grams
+95.6s 17 wikipedia  kept 119,839 / 120,003 (removed 164)
+97.4s 18 news       kept 86,694 / 87,144 (removed 450)
+99.6s 19 reviews    kept 119,728 / 120,001 (removed 273)
+99.6s 20 premises selected: 60000 {'news': 20000, 'reviews': 20000, 'wikipedia': 20000}
+103.4s 21 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+103.4s 22 
+103.4s 23 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+134.6s 24 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+134.6s 25 
+134.6s 26 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+230.0s 27 generated 2,400/60,000  24 ex/s  ETA 39.2 min
+342.2s 28 generated 4,800/60,000  23 ex/s  ETA 40.3 min
+462.0s 29 generated 7,200/60,000  22 ex/s  ETA 40.3 min
+586.4s 30 generated 9,600/60,000  21 ex/s  ETA 39.8 min
+710.8s 31 generated 12,000/60,000  21 ex/s  ETA 38.6 min
+837.5s 32 generated 14,400/60,000  20 ex/s  ETA 37.2 min
+965.8s 33 generated 16,800/60,000  20 ex/s  ETA 35.7 min
+1094.9s 34 generated 19,200/60,000  20 ex/s  ETA 34.1 min
+1226.1s 35 generated 21,600/60,000  20 ex/s  ETA 32.4 min
+1358.4s 36 generated 24,000/60,000  20 ex/s  ETA 30.7 min
+1492.5s 37 generated 26,400/60,000  19 ex/s  ETA 28.9 min
+1628.1s 38 generated 28,800/60,000  19 ex/s  ETA 27.0 min
+1764.8s 39 generated 31,200/60,000  19 ex/s  ETA 25.1 min
+1902.3s 40 generated 33,600/60,000  19 ex/s  ETA 23.2 min
+2040.8s 41 generated 36,000/60,000  19 ex/s  ETA 21.2 min
+2180.7s 42 generated 38,400/60,000  19 ex/s  ETA 19.2 min
+2322.0s 43 generated 40,800/60,000  19 ex/s  ETA 17.2 min
+2466.8s 44 generated 43,200/60,000  19 ex/s  ETA 15.1 min
+2613.9s 45 generated 45,600/60,000  18 ex/s  ETA 13.1 min
+2761.8s 46 generated 48,000/60,000  18 ex/s  ETA 11.0 min
+2911.5s 47 generated 50,400/60,000  18 ex/s  ETA 8.8 min
+3062.3s 48 generated 52,800/60,000  18 ex/s  ETA 6.7 min
+3215.7s 49 generated 55,200/60,000  18 ex/s  ETA 4.5 min
+3371.3s 50 generated 57,600/60,000  18 ex/s  ETA 2.2 min
+3524.2s 51 generated 60,000/60,000  18 ex/s  ETA 0.0 min
+3524.3s 52 hypotheses kept after filtering: 53,993 / 60,000
+3524.3s 53 requested                                                                                    premise                                                                                 hypothesis
+3524.3s 54 45576          2                            Those who want some substance with their style, look elsewhere.                                It's possible for someone to have both substance and style.
+3524.3s 55 21930          1  However, some genera such as the inarticulate Crania and the articulate Lacazella have...  Some genera, such as the inarticulate Crania and the articulate Lacazella, may have th...
+3524.3s 56 1319           2  Considering his knowledge of computers is rudimentary, it's amazing how he puts into e...  The main character is a professional hacker and has been working for the government's ...
+3524.3s 57 4639           2  After it fell into disuse during the Bronze Age, Maeshowe was re-opened and used centu...  The text states that the site was used by Vikings from the 9th to the 12th centuries A...
+3524.3s 58 46386          2  IRA: Willing to Disarm, But Photos Impossible IRA guerrillas said on Thursday they wou...  The IRA is a terrorist organization that has a long history of violence and has been r...
+3524.3s 59 51371          1  New Beagle mission plan revealed The details of the next Beagle mission to Mars have b...  It appears that the text is true, as the lead Beagle scientist Colin Pilger has indeed...
+3524.3s 60 50286          0  Former US figure skating champ arrested on gun charge Former US figure skating champio...   Christopher Bowman, the former US figure skating champion, was arrested on a gun charge.
+3524.3s 61 32820          0  Kroger Workers OK New 3-Year Contract Grocery store chain Kroger Co. said Friday that ...                                                                          The text is true.
+3524.3s 62 45524          2  Although much of Bill Peet 's work was discarded, the personalities of the characters ...  Bill Peet was not a prolific film director, and his work was mostly associated with te...
+3524.3s 63 2757           2  Regardless, that afternoon the Argylls encountered no further opposition as they enter...                            They were able to defeat the entire army of the invading Scots.
+3524.3s 64 51911          1  PepsiCo Net Rises 35; Frito-Lay Job Cuts Planned (Update1) PepsiCo Inc., the world #39...  PepsiCo has reported a surprise 35% increase in third-quarter earnings, sparking specu...
+3524.3s 65 32549          2  In 1861, to supplement his income, the younger Gilbert began writing illustrated stori...  The younger Gilbert was not a prolific writer and his early work consisted mainly of s...
+3552.0s 66 teacher accuracy on 2,000 SNLI-val rows: 0.9275 (full val: 0.9198)
+3649.2s 67 labelled 6,400/53,993  71 ex/s  ETA 11.2 min
+3750.8s 68 labelled 12,800/53,993  67 ex/s  ETA 10.3 min
+3860.9s 69 labelled 19,200/53,993  64 ex/s  ETA 9.1 min
+3977.9s 70 labelled 25,600/53,993  61 ex/s  ETA 7.7 min
+4100.0s 71 labelled 32,000/53,993  59 ex/s  ETA 6.2 min
+4227.2s 72 labelled 38,400/53,993  57 ex/s  ETA 4.5 min
+4363.3s 73 labelled 44,800/53,993  56 ex/s  ETA 2.7 min
+4509.0s 74 labelled 51,200/53,993  54 ex/s  ETA 0.9 min
+4578.7s 75 teacher label      contradiction  entailment  neutral
+4578.7s 76 requested
+4578.7s 77 asked: contradict          12415         978     4952
+4578.7s 78 asked: entail               1329       10779     6871
+4578.7s 79 asked: neutral              1565        3120    11984
+4578.7s 80 
+4579.1s 81 {
+4579.1s 82 "n_pairs": 53993,
+4579.1s 83 "per_source": {
+4579.1s 84 "news": 18650,
+4579.1s 85 "wikipedia": 18093,
+4579.1s 86 "reviews": 17250
+4579.1s 87 },
+4579.1s 88 "removed_by_decontamination": {
+4579.1s 89 "wikipedia": 164,
+4579.1s 90 "news": 450,
+4579.1s 91 "reviews": 273
+4579.1s 92 },
+4579.1s 93 "teacher_label_dist": {
+4579.1s 94 "entailment": 0.2755357175930213,
+4579.1s 95 "neutral": 0.4409275276424722,
+4579.1s 96 "contradiction": 0.2835367547645065
+4579.1s 97 },
+4579.1s 98 "agreement_requested_vs_teacher": 0.65152890189469,
+4579.1s 99 "mean_max_prob": 0.7818494439125061,
+4579.1s 100 "frac_max_prob_gt_0.9": 0.33671031430000187,
+4579.1s 101 "teacher_check_acc_snli_val_2k": 0.9275,
+4579.1s 102 "premise_words_mean": 26.223732706091532,
+4579.1s 103 "hyp_words_mean": 16.233511751523345
+4579.1s 104 }
+4579.5s 105 saved: ['generic_pairs_53k.csv', 'generic_stats.json']
+4579.5s 106 Next: Save Version -> Save & Run All; make a Dataset 'nli-generic' from the output; Notebook 6 with RUN_ARMS=['kd_generic'].
+4585.1s 107 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+4585.1s 108 cells[i][c] = re.sub('\\\\\|', '|', cell)
+4585.2s 109 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4585.2s 110 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+4586.0s 111 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+4586.2s 112 [NbConvertApp] Writing 496164 bytes to __notebook__.ipynb
+4588.8s 113 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+4589.4s 114 [NbConvertApp] Writing 739918 bytes to __results__.html

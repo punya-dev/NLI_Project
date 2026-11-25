@@ -1,0 +1,28 @@
+model,vs,eval_set,diff_pts,ci95,seeds_sig(p<.05),mcnemar_p_per_seed
+DB + distillation (kd),DistilBERT baseline,snli_test,1.3,"[+1.00, +1.61]",3/3,"['1.5e-06', '1.68e-09', '4.99e-08']"
+DB + distillation (kd),DistilBERT baseline,mnli_m,3.02,"[+2.55, +3.50]",3/3,"['2.87e-18', '7.61e-17', '2.1e-16']"
+DB + distillation (kd),DistilBERT baseline,mnli_mm,2.42,"[+1.94, +2.87]",3/3,"['1.83e-15', '2.23e-13', '6.92e-08']"
+DB + product of experts,DistilBERT baseline,snli_test,-1.48,"[-1.89, -1.10]",3/3,"['4.12e-08', '0.000693', '8.59e-11']"
+DB + product of experts,DistilBERT baseline,mnli_m,-2.87,"[-3.53, -2.19]",3/3,"['1.57e-14', '5.24e-06', '2.26e-11']"
+DB + product of experts,DistilBERT baseline,mnli_mm,-3.28,"[-3.93, -2.60]",3/3,"['1.5e-13', '1.67e-09', '3.23e-19']"
+DB + label smoothing (control),DistilBERT baseline,snli_test,0.07,"[-0.15, +0.32]",0/3,"['0.772', '0.224', '0.923']"
+DB + label smoothing (control),DistilBERT baseline,mnli_m,0.35,"[+0.00, +0.68]",1/3,"['0.972', '4.04e-05', '0.517']"
+DB + label smoothing (control),DistilBERT baseline,mnli_mm,0.01,"[-0.34, +0.33]",2/3,"['0.00045', '0.00595', '0.5']"
+DB + distillation + generic,DistilBERT baseline,snli_test,1.53,"[+1.20, +1.88]",3/3,"['9.54e-08', '5.81e-13', '1.98e-07']"
+DB + distillation + generic,DistilBERT baseline,mnli_m,7.83,"[+7.15, +8.49]",3/3,"['2.23e-69', '1.31e-70', '1.91e-58']"
+DB + distillation + generic,DistilBERT baseline,mnli_mm,7.03,"[+6.37, +7.74]",3/3,"['3.41e-58', '1.39e-55', '1.49e-54']"
+DB + distillation + extra SNLI (control),DistilBERT baseline,snli_test,2.11,"[+1.73, +2.46]",3/3,"['1.81e-14', '7.42e-16', '2.97e-16']"
+DB + distillation + extra SNLI (control),DistilBERT baseline,mnli_m,4.33,"[+3.80, +4.86]",3/3,"['1.42e-31', '4.81e-26', '3.7e-25']"
+DB + distillation + extra SNLI (control),DistilBERT baseline,mnli_mm,3.95,"[+3.45, +4.48]",3/3,"['2.72e-29', '3.73e-20', '1.69e-22']"
+Llama-1B LoRA,DistilBERT baseline,snli_test,5.42,"[+4.84, +5.98]",1/1,['1.8e-62']
+Llama-1B LoRA,DistilBERT baseline,mnli_m,19.9,"[+18.95, +20.91]",1/1,['6.37e-308']
+Llama-1B LoRA,DistilBERT baseline,mnli_mm,17.77,"[+16.89, +18.61]",1/1,['5.38e-276']
+DB + distillation + generic,DB + distillation (kd),snli_test,0.23,"[-0.04, +0.52]",0/3,"['0.344', '0.0693', '0.893']"
+DB + distillation + generic,DB + distillation (kd),mnli_m,4.82,"[+4.20, +5.46]",3/3,"['5.35e-31', '2.41e-34', '6.68e-26']"
+DB + distillation + generic,DB + distillation (kd),mnli_mm,4.61,"[+4.05, +5.23]",3/3,"['5.68e-26', '9.13e-27', '1.96e-34']"
+DB + distillation + generic,DB + distillation + extra SNLI (control),snli_test,-0.58,"[-0.89, -0.27]",2/3,"['0.00381', '0.297', '0.000469']"
+DB + distillation + generic,DB + distillation + extra SNLI (control),mnli_m,3.51,"[+2.90, +4.14]",3/3,"['1.13e-15', '2.55e-22', '8.71e-15']"
+DB + distillation + generic,DB + distillation + extra SNLI (control),mnli_mm,3.08,"[+2.51, +3.68]",3/3,"['4.53e-12', '3.26e-17', '5.7e-14']"
+DB + distillation + extra SNLI (control),DB + distillation (kd),snli_test,0.81,"[+0.53, +1.09]",3/3,"['6.85e-05', '0.00257', '0.000193']"
+DB + distillation + extra SNLI (control),DB + distillation (kd),mnli_m,1.31,"[+0.89, +1.74]",3/3,"['3.02e-06', '0.000578', '0.000912']"
+DB + distillation + extra SNLI (control),DB + distillation (kd),mnli_mm,1.53,"[+1.12, +1.95]",3/3,"['1.9e-06', '0.00314', '3.38e-09']"

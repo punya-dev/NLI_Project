@@ -1,0 +1,71 @@
+11.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.7s 3 0.00s - to python to disable frozen modules.
+11.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.6s 7 0.00s - to python to disable frozen modules.
+12.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+18.1s 9 Writing /kaggle/working/nli_data/nli_common.py
+22.3s 10 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+22.3s 11 
+22.3s 12 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+28.0s 13 snli_train   550,152 -> 549,367 rows  (invalid labels removed: 785, empty text removed: 0)
+28.0s 14 snli_val      10,000 ->   9,842 rows  (invalid labels removed: 158, empty text removed: 0)
+28.0s 15 snli_test     10,000 ->   9,824 rows  (invalid labels removed: 176, empty text removed: 0)
+28.4s 16 100K class counts: {0: 33387, 1: 33268, 2: 33345}
+28.4s 17 50K class counts: {0: 16693, 1: 16634, 2: 16673}
+34.6s 18 DatasetDict({
+34.6s 19 train: Dataset({
+34.6s 20 features: ['promptID', 'pairID', 'premise', 'premise_binary_parse', 'premise_parse', 'hypothesis', 'hypothesis_binary_parse', 'hypothesis_parse', 'genre', 'label'],
+34.6s 21 num_rows: 392702
+34.6s 22 })
+34.6s 23 validation_matched: Dataset({
+34.6s 24 features: ['promptID', 'pairID', 'premise', 'premise_binary_parse', 'premise_parse', 'hypothesis', 'hypothesis_binary_parse', 'hypothesis_parse', 'genre', 'label'],
+34.6s 25 num_rows: 9815
+34.6s 26 })
+34.6s 27 validation_mismatched: Dataset({
+34.6s 28 features: ['promptID', 'pairID', 'premise', 'premise_binary_parse', 'premise_parse', 'hypothesis', 'hypothesis_binary_parse', 'hypothesis_parse', 'genre', 'label'],
+34.6s 29 num_rows: 9832
+34.6s 30 })
+34.6s 31 })
+34.6s 32 mnli_m         9,815 ->   9,815 rows  (invalid labels removed: 0, empty text removed: 0)
+34.6s 33 mnli_mm        9,832 ->   9,832 rows  (invalid labels removed: 0, empty text removed: 0)
+34.6s 34 matched genres   : {'travel': 1976, 'fiction': 1973, 'telephone': 1966, 'slate': 1955, 'government': 1945}
+34.6s 35 mismatched genres: {'letters': 1977, 'facetoface': 1974, 'nineeleven': 1974, 'oup': 1961, 'verbatim': 1946}
+35.3s 36 Exact (premise, hypothesis) overlap of train_100k with:
+35.3s 37 snli_val  pairs=0    premises=7
+35.4s 38 snli_test pairs=0    premises=6
+35.4s 39 mnli_m    pairs=0    premises=0
+35.6s 40 mnli_mm   pairs=0    premises=0
+36.0s 41 snli_train_100k  premise words mean= 12.8 p95=   23 max=  78 | hyp mean=  7.4 p95=  13 max=  46
+36.0s 42 snli_test        premise words mean= 13.9 p95=   25 max=  54 | hyp mean=  7.5 p95=  13 max=  29
+36.0s 43 mnli_m           premise words mean= 19.3 p95=   43 max= 196 | hyp mean=  9.9 p95=  17 max=  46
+36.0s 44 mnli_mm          premise words mean= 19.6 p95=   42 max= 129 | hyp mean= 10.8 p95=  19 max=  53
+36.0s 45 -> MNLI premises are much longer than SNLI; use max_len >= 256 for transformer inference on MNLI.
+36.9s 46 {
+36.9s 47 "snli_train_full_clean": 549367,
+36.9s 48 "snli_train_100k": 100000,
+36.9s 49 "snli_train_50k": 50000,
+36.9s 50 "snli_val": 9842,
+36.9s 51 "snli_test": 9824,
+36.9s 52 "mnli_m": 9815,
+36.9s 53 "mnli_mm": 9832
+36.9s 54 }
+37.1s 55 [random | snli_val] acc=0.3314 macroF1=0.3314 per-class F1=[0.331, 0.329, 0.334]
+37.2s 56 [random | mnli_m] acc=0.3309 macroF1=0.3307 per-class F1=[0.338, 0.33, 0.324]
+37.2s 57 id  label       genre  pred     p_ent     p_neu     p_con
+37.2s 58 0   0      1       slate     1  0.338639  0.654341  0.007019
+37.2s 59 1   1      2  government     1  0.024025  0.508210  0.467765
+37.2s 60 2   2      0   telephone     2  0.001804  0.047589  0.950607
+37.2s 61 McNemar (random vs random): (2164, 2184, 0.7732407702756902)
+37.2s 62 
+37.2s 63 All good. Now: Save Version -> Save & Run All, then create Dataset 'nli-data' from this notebook's output.
+41.4s 64 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+41.4s 65 cells[i][c] = re.sub('\\\\\|', '|', cell)
+41.6s 66 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+41.6s 67 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+42.6s 68 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+42.7s 69 [NbConvertApp] Writing 283397 bytes to __notebook__.ipynb
+46.1s 70 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+46.9s 71 [NbConvertApp] Writing 551989 bytes to __results__.html
